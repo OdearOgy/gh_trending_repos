@@ -14,17 +14,17 @@
 :root {
 	font-size: 62.5%;
 
-	--h1: clamp(4.2rem, 10vw, 6.5rem);
+	--h1: clamp(4.2rem, 5vw, 6.5rem);
 
-	--h2: clamp(2.5rem, 10vw, 5.5rem);
+	--h2: clamp(2.5rem, 5vw, 5.5rem);
 
-	--h3: clamp(2rem, 10vw, 3rem);
+	--h3: clamp(2rem, 5vw, 3rem);
 
-	--h4: clamp(0.8rem, 10vw, 2.5rem);
+	--h4: clamp(0.8rem, 5vw, 2.5rem);
 
-	--small-text: clamp(0.8rem, 10vw, 2rem);
+	--small-text: clamp(0.8rem, 5vw, 2rem);
 
-	--tiny-text: clamp(0.5rem, 10vw, 1.4rem);
+	--tiny-text: clamp(0.5rem, 5vw, 1.4rem);
 
 	--white: #ffffff;
 	--black: #292929;

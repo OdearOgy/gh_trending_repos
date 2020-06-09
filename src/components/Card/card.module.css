@@ -26,7 +26,8 @@
 .title {
 	font-size: var(--h4);
 	color: currentColor;
-	line-height: 1;
+	line-height: 1.2;
+	overflow: hidden;
 }
 
 .title a {
@@ -43,7 +44,6 @@
 	white-space: normal;
 	line-height: 1.5;
 	height: 7rem;
-	width: 70%;
 
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
@@ -52,9 +52,24 @@
 
 .details {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .details span {
 	margin: 0 2rem;
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 992px) {
+	.description {
+		width: 70%;
+	}
+
+	.details {
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+	}
 }
