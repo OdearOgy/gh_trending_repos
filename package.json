@@ -1,6 +1,8 @@
 {
 	"name": "github_trending",
 	"version": "0.1.0",
+	"homepage": "https://OdearOgy.github.io/gh_trending_repos",
+	"author": "OdearOgy",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
