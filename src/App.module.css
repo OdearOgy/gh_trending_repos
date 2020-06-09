@@ -1,0 +1,57 @@
+.app {
+	font-size: var(--small-text);
+	max-width: 144rem;
+
+	margin: 0 auto;
+	padding: 0 2rem;
+	text-shadow: 0.4rem 1rem 1rem var(--black);
+}
+
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 6rem;
+	margin: 2rem 0;
+	padding: 5rem 0;
+	border: 0.1rem solid var(--light-grey);
+	font-size: var(--h3);
+	text-align: center;
+}
+
+.main {
+	display: grid;
+	grid-template-areas: 'gh-filters' 'gh-content';
+
+	grid-template-columns: 100%;
+	grid-template-rows: 0.5fr 2fr;
+
+	height: 60vh;
+}
+
+.filters {
+	grid-area: gh-filters;
+}
+
+.content {
+	grid-area: gh-content;
+	border: 0.1rem solid var(--black);
+	overflow-y: scroll;
+}
+
+.footer {
+	composes: header;
+	font-size: var(--small-text);
+}
+
+.footer a {
+	color: currentColor;
+}
+
+@media (min-width: 992px) {
+	.main {
+		grid-template-areas: 'gh-filters gh-content';
+		grid-template-columns: 0.5fr 1fr;
+		grid-template-rows: 100%;
+	}
+}
