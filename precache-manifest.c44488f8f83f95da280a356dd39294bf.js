@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d52ad39355d6319cf001b4915960a62b",
+    "revision": "5a902d9ce482214c644868c6d54a3fbe",
     "url": "/gh_trending_repos/index.html"
   },
   {
-    "revision": "83d59dbd56fdaef123b9",
-    "url": "/gh_trending_repos/static/css/main.0c4a9744.chunk.css"
+    "revision": "991a56f66d1542a10b65",
+    "url": "/gh_trending_repos/static/css/main.0d6f2543.chunk.css"
   },
   {
     "revision": "287bd94c782b1b1bd03b",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gh_trending_repos/static/js/2.0b06f66b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "83d59dbd56fdaef123b9",
+    "revision": "991a56f66d1542a10b65",
     "url": "/gh_trending_repos/static/js/main.c86996b9.chunk.js"
   },
   {
