@@ -13,7 +13,6 @@
 
 :root {
 	font-size: 62.5%;
-	/* font-sizes */
 
 	--h1: clamp(4.2rem, 10vw, 6.5rem);
 
@@ -31,7 +30,6 @@
 	--black: #292929;
 	--light-black: #3a373e;
 	--light-grey: #cecece;
-	--light-red-orange: #e2842e;
 	--pale-yellow: #f3d18e;
 }
 
@@ -40,6 +38,6 @@ body {
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: var(--black);
+	background: var(--light-black);
 	color: var(--white);
 }

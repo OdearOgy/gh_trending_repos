@@ -1,7 +1,6 @@
 .app {
 	font-size: var(--small-text);
 	max-width: 144rem;
-
 	margin: 0 auto;
 	padding: 0 2rem;
 	text-shadow: 0.4rem 1rem 1rem var(--black);
@@ -22,11 +21,11 @@
 .main {
 	display: grid;
 	grid-template-areas: 'gh-filters' 'gh-content';
-
 	grid-template-columns: 100%;
 	grid-template-rows: 0.5fr 2fr;
-
 	height: 60vh;
+	border: 0.1rem solid var(--light-grey);
+	padding: 2rem 1rem;
 }
 
 .filters {
@@ -35,7 +34,6 @@
 
 .content {
 	grid-area: gh-content;
-	border: 0.1rem solid var(--black);
 	overflow-y: scroll;
 }
 
