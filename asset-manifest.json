@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gh_trending_repos/static/css/main.ac9a5277.chunk.css",
+    "main.js": "/gh_trending_repos/static/js/main.c86996b9.chunk.js",
+    "main.js.map": "/gh_trending_repos/static/js/main.c86996b9.chunk.js.map",
+    "runtime-main.js": "/gh_trending_repos/static/js/runtime-main.ef3804d9.js",
+    "runtime-main.js.map": "/gh_trending_repos/static/js/runtime-main.ef3804d9.js.map",
+    "static/js/2.0b06f66b.chunk.js": "/gh_trending_repos/static/js/2.0b06f66b.chunk.js",
+    "static/js/2.0b06f66b.chunk.js.map": "/gh_trending_repos/static/js/2.0b06f66b.chunk.js.map",
+    "index.html": "/gh_trending_repos/index.html",
+    "precache-manifest.ea834e23cec709029444c2707ea30614.js": "/gh_trending_repos/precache-manifest.ea834e23cec709029444c2707ea30614.js",
+    "service-worker.js": "/gh_trending_repos/service-worker.js",
+    "static/css/main.ac9a5277.chunk.css.map": "/gh_trending_repos/static/css/main.ac9a5277.chunk.css.map",
+    "static/js/2.0b06f66b.chunk.js.LICENSE.txt": "/gh_trending_repos/static/js/2.0b06f66b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef3804d9.js",
+    "static/js/2.0b06f66b.chunk.js",
+    "static/css/main.ac9a5277.chunk.css",
+    "static/js/main.c86996b9.chunk.js"
+  ]
+}
