@@ -43,6 +43,13 @@
 	grid-area: gh-content;
 }
 
+.placeholder__card {
+	grid-area: gh-content;
+	height: 80vh;
+	display: grid;
+	place-items: center;
+}
+
 .footer {
 	composes: header;
 	font-size: var(--small-text);
@@ -61,6 +68,5 @@
 
 	.filters {
 		position: fixed;
-		width: 40rem;
 	}
 }

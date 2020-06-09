@@ -18,11 +18,12 @@ function App() {
 	}, [url, query]);
 
 	const handleFilter = (filters) => {
-		const { sorting, ordering, language } = filters;
+		const { search, sorting, ordering, language } = filters;
 
 		let query = '';
-
-		if (language !== '') {
+		if (search !== '') {
+			query = `?sort=${sorting}&order${ordering}&q=language&q=${search}`;
+		} else if (language !== '') {
 			query = `?sort=${sorting}&order=${ordering}&q=language:${language}`;
 		} else {
 			query = `?sort=${sorting}&order=${ordering}&q=language`;
@@ -43,15 +44,21 @@ function App() {
 
 				<div className={styles.content}>
 					<h3 className={styles.title}>Repositories</h3>
-					{data.map((repo) => (
-						<Card
-							key={repo.id}
-							r_stars={repo.watchers_count}
-							r_url={repo.html_url}
-							r_name={repo.full_name}
-							{...repo}
-						/>
-					))}
+					{data.length > 0 ? (
+						data.map((repo) => (
+							<Card
+								key={repo.id}
+								r_stars={repo.watchers_count}
+								r_url={repo.html_url}
+								r_name={repo.full_name}
+								{...repo}
+							/>
+						))
+					) : (
+						<div className={styles.placeholder__card}>
+							<h1>Loading</h1>
+						</div>
+					)}
 				</div>
 			</div>
 

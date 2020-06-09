@@ -32,7 +32,7 @@ function Filters({ handleFilter }) {
 						errorstyles={styles.error}
 						name='search'
 						inputstyles={styles.filter__field}
-						placeholder='Name, Owner'
+						placeholder='Name in:name,readme or user:username or stars:100'
 					/>
 
 					<CustomInput
