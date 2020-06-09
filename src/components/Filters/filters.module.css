@@ -1,0 +1,83 @@
+.filter__form {
+	display: grid;
+	justify-items: center;
+	grid-template-areas: 'search' 'sorting' 'ordering' 'language' 'filter__btn';
+
+	column-gap: 2rem;
+	width: 100%;
+}
+
+.filter__label {
+	font-size: 2rem;
+	margin: 2rem;
+	width: 100%;
+}
+
+.search__label,
+.sorting__label,
+.ordering__label,
+.language__label {
+	composes: filter__label;
+}
+
+.search__label {
+	grid-area: search;
+}
+.sorting__label {
+	grid-area: sorting;
+}
+.ordering__label {
+	grid-area: ordering;
+}
+.language__label {
+	grid-area: language;
+}
+
+.filter__field {
+	width: inherit;
+	font-size: 2rem;
+	line-height: 1.2;
+	margin: 1rem 0.5rem;
+	padding: 1.5rem 1rem;
+	background: var(--black);
+	color: currentColor;
+	cursor: pointer;
+	border: none;
+	border-bottom: 0.4rem solid var(--pale-yellow);
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	border-radius: 0.2rem;
+	-webkit-border-radius: 0.2rem;
+	-moz-border-radius: 0.2rem;
+	-ms-border-radius: 0.2rem;
+	-o-border-radius: 0.2rem;
+}
+
+.error {
+	color: var(--dark-red-orange);
+	font-size: 1.5rem;
+}
+
+.custom__btn {
+	background: var(--pale-yellow);
+	border: none;
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+
+	grid-area: filter__btn;
+	justify-self: center;
+}
+
+@media (min-width: 992px) {
+	.filter__form {
+		padding: 2rem 3rem;
+	}
+}

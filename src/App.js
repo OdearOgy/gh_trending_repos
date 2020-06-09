@@ -1,21 +1,35 @@
 import React, { useEffect, useState } from 'react';
 
-import { Card } from './components';
+import { Card, Filters } from './components';
 
 import styles from './App.module.css';
 
 function App() {
 	const [data, setData] = useState([]);
-	const url = 'https://api.github.com/search/repositories?sort=stars&q=language';
+	const [query, setQuery] = useState('?sort=stars&order=desc&q=language');
+	const url = 'https://api.github.com/search/repositories';
 
 	useEffect(() => {
-		fetch(url)
+		fetch(`${url}${query}`)
 			.then((res) => res.json())
 			.then((data) => {
-				console.log(data.items);
 				setData(data.items);
 			});
-	}, [url]);
+	}, [url, query]);
+
+	const handleFilter = (filters) => {
+		const { sorting, ordering, language } = filters;
+
+		let query = '';
+
+		if (language !== '') {
+			query = `?sort=${sorting}&order=${ordering}&q=language:${language}`;
+		} else {
+			query = `?sort=${sorting}&order=${ordering}&q=language`;
+		}
+
+		setQuery(`${query}`);
+	};
 
 	return (
 		<div className={styles.app}>
@@ -23,11 +37,12 @@ function App() {
 
 			<div className={styles.main}>
 				<div className={styles.filters}>
-					{/* the searchbar feature */}
-					<h3>search</h3>
+					<h3 className={styles.title}>Filters</h3>
+					<Filters handleFilter={handleFilter} />
 				</div>
 
 				<div className={styles.content}>
+					<h3 className={styles.title}>Repositories</h3>
 					{data.map((repo) => (
 						<Card
 							key={repo.id}

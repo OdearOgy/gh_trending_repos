@@ -22,19 +22,25 @@
 	display: grid;
 	grid-template-areas: 'gh-filters' 'gh-content';
 	grid-template-columns: 100%;
-	grid-template-rows: 0.5fr 2fr;
-	height: 60vh;
+	grid-template-rows: 0.1fr 3fr;
+	row-gap: 2rem;
 	border: 0.1rem solid var(--light-grey);
 	padding: 2rem 1rem;
+	position: relative;
+}
+
+.title {
+	font-size: var(--h3);
+	text-align: center;
 }
 
 .filters {
 	grid-area: gh-filters;
+	padding: 2rem;
 }
 
 .content {
 	grid-area: gh-content;
-	overflow-y: scroll;
 }
 
 .footer {
@@ -49,7 +55,12 @@
 @media (min-width: 992px) {
 	.main {
 		grid-template-areas: 'gh-filters gh-content';
-		grid-template-columns: 0.5fr 1fr;
+		grid-template-columns: 0.8fr 1.5fr;
 		grid-template-rows: 100%;
+	}
+
+	.filters {
+		position: fixed;
+		width: 40rem;
 	}
 }
